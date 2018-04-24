@@ -215,15 +215,98 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-/* These rules will be in effect when the browers width is either 768px or less    */
+  .wrapper {
+    width:1024;
+ 
+   }
+/* These rules will be in effect when the browers width is either 980px or less    */
+
+@media screen and (max-width: 980px)  {
+.main-section{
+  width: 86%;
+  max-width: 86%;
+  margin-left: 5%;
+  
+}
+.work{
+   width:45%;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    
+}
+#logo{
+  float: left;
+  width: 250px;
+  height: 90px;
+  
+
+}
+nav{
+  float: right;
+  margin-top: 25px;
+}
+nav a{
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  border-left: 1px solid #efefef;
+}
+#main container{
+  padding-top: 130px;
+  
+}
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  
+}
+
+}
 
 @media screen and (max-width: 768px)  {
-body{
+  .main-section{
+    width: 66%;
+    max-width: 66%;
+   margin-left: 15%;
+  }
+  .work{
+    width:45%
+  }
+  
+  #main container{
+    padding-top: 30px;
+  }
+  #masthead {
+  
+  }
+  
+  }
 
-}
-.wrapper {
-    width:600px;
-}
-
-
-}
+  @media screen and (max-width: 640px)  {
+    .main-section{
+      width: 66%;
+      max-width: 66%;
+      margin-bottom: 30%;
+    }
+    .work{
+      width:45%;
+    }
+    nav{
+      float: center;
+      margin-top: 25px;
+    }
+    nav a{
+    
+    }
+    #main container{
+      padding-top: 10px;
+    }
+    #masthead {
+      position: static;
+    }
+    
+    }
